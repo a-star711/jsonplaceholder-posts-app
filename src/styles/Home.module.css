@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 40px;
+  margin: 40px;
+
+}
+
+h1 {
+  margin-top: 20px;
+}
