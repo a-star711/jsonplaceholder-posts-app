@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+Posts App that interacts with the JSONPlaceholder API to fetch and manage posts data.It’s built with Vite and TypeScript and uses the JSONPlaceholder API as a mock backend.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features:
+Fetch Posts: Retrieves posts from JSONPlaceholder API, displaying the latest 20 with id's from 81 to 100.
+User Filtering: Filters posts by user (JSONPlaceholder provides 10 different users with id from 1 to 10).
+Create New Posts
+Mock Avatars: Displays a unique avatar for each user using the DiceBear Avatars API.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/user-attachments/assets/9f17cbd6-2d62-40b1-95e9-53b6fcc5f553)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Installation:
 
-- Configure the top-level `parserOptions` property like this:
+bash
+git clone https://github.com/yourusername/posts-app.git
+cd posts-app
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Install dependencies:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+bash
+npm install
+Run the app
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+bash
+npm run dev
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+
+
