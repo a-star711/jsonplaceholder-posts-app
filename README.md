@@ -12,7 +12,7 @@ Posts App that interacts with the JSONPlaceholder API to fetch and manage posts 
  Displays a unique avatar for each user using the DiceBear Avatars API.
 
 
-![image](https://github.com/user-attachments/assets/9f17cbd6-2d62-40b1-95e9-53b6fcc5f553)
+![image](https://github.com/user-attachments/assets/c746d98a-0123-4300-ad31-0f2f5fab65b8)
 
 
 Installation:
