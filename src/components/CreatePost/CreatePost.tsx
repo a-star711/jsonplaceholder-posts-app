@@ -54,7 +54,7 @@ const CreatePost: React.FC<CreatePostProps> = ({ onPostCreated }) => {
   };
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       {notification && (
         <Notification
           message={notification}
@@ -75,6 +75,7 @@ const CreatePost: React.FC<CreatePostProps> = ({ onPostCreated }) => {
           <label>Title:</label>
           <input
             type="text"
+            maxLength={28}
             value={newPost.title}
             onChange={(e) => handleInputChange("title", e.target.value)}
           />
@@ -82,6 +83,7 @@ const CreatePost: React.FC<CreatePostProps> = ({ onPostCreated }) => {
         <div className={styles.field}>
           <label>Body:</label>
           <textarea
+            maxLength={240}
             value={newPost.body}
             onChange={(e) => handleInputChange("body", e.target.value)}
           />
