@@ -3,6 +3,7 @@ Posts App that interacts with the JSONPlaceholder API to fetch and manage posts 
 **Features:**
 
 **Fetch Posts:** Retrieves posts from JSONPlaceholder API, displaying the latest 20 with id's from 81 to 100.
+
 **User Filtering:** Filters posts by user (JSONPlaceholder provides 10 different users with id from 1 to 10).
 
 **Create New Posts**
