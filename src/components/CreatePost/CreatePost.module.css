@@ -44,6 +44,8 @@ textarea {
 }
 
 .select {
+  font-size: 14px;
+  padding: 6px 8px;
   border-radius: 8px;
 }
 
