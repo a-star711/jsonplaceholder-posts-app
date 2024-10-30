@@ -17,7 +17,7 @@ Posts App that interacts with the JSONPlaceholder API to fetch and manage posts 
 
 Installation:
 
-git clone https://github.com/yourusername/posts-app.git
+git clone [https://github.com/yourusername/posts-app.git](https://github.com/a-star711/jsonplaceholder-posts-app.git)
 
 cd posts-app
 
