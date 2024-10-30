@@ -12,17 +12,15 @@ Mock Avatars: Displays a unique avatar for each user using the DiceBear Avatars 
 
 Installation:
 
-bash
 git clone https://github.com/yourusername/posts-app.git
 cd posts-app
 
-Install dependencies:
+**Install dependencies:**
 
-bash
 npm install
-Run the app
 
-bash
+**Run the app**
+
 npm run dev
 
 
