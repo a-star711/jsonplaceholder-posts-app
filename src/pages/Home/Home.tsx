@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import PostList from "../components/PostList/PostList";
-import CreatePost from "../components/CreatePost/CreatePost";
-import { Post } from "../types/types";
-import styles from "../styles/Home.module.css";
+import PostList from "../../components/PostList/PostList";
+import CreatePost from "../../components/CreatePost/CreatePost";
+import { Post } from "../../types/types";
+import styles from "../Home/Home.module.css";
 
 const Home: React.FC = () => {
   const [newPost, setNewPost] = useState<Post | null>(null);

@@ -1,25 +1,24 @@
 .form {
-  padding: 1rem;
+  padding: 16px;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f9f9f9;
 }
 
 .field {
-  margin-bottom: 1rem;
+  margin-bottom: 16px; 
 }
 
 label {
   display: block;
-  margin-bottom: 0.5rem;
-
+  margin-bottom: 8px; 
 }
 
 input[type="text"],
 input[type="number"],
 textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: 8px; 
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
@@ -32,7 +31,7 @@ textarea {
 }
 
 .button {
-  padding: 0.5rem 1rem;
+  padding: 8px 16px; 
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -45,6 +44,5 @@ textarea {
 }
 
 .select {
-
   border-radius: 8px;
 }
