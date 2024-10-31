@@ -19,7 +19,6 @@ const PostItem: React.FC<PostItemProps> = ({ post }) => {
       />
       <h2>{post.title}</h2>
       <p>{post.body}</p>
-      <p>Id: {post.id}</p>
     </div>
   );
 };
