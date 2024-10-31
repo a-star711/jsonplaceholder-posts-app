@@ -78,6 +78,7 @@ const CreatePost: React.FC<CreatePostProps> = ({ onPostCreated }) => {
             maxLength={28}
             value={newPost.title}
             onChange={(e) => handleInputChange("title", e.target.value)}
+            required
           />
         </div>
         <div className={styles.field}>
@@ -86,6 +87,7 @@ const CreatePost: React.FC<CreatePostProps> = ({ onPostCreated }) => {
             maxLength={240}
             value={newPost.body}
             onChange={(e) => handleInputChange("body", e.target.value)}
+            required
           />
         </div>
         <div className={styles.field}>
