@@ -3,20 +3,36 @@ import { Post } from "../types/types";
 const API_URL = "https://jsonplaceholder.typicode.com";
 
 export const fetchPosts = async (): Promise<Post[]> => {
-  const response = await fetch(`${API_URL}/posts`);
-  return response.json();
+  try {
+    const response = await fetch(`${API_URL}/posts`);
+
+    if (!response.ok) {
+      throw new Error(`Error: ${response.status}`);
+    }
+    
+    const data = await response.json();
+    
+    if (!Array.isArray(data)) {
+      throw new Error("Invalid data format: Expected an array of posts");
+    }
+
+    return data;
+  } catch (error) {
+    console.error("Failed to fetch posts:", error);
+    throw error;
+  }
 };
 
 
 export const createPost = async (newPost: Omit<Post, 'id'>): Promise<Post> => {
 
-  if (!newPost.title || typeof newPost.title !== 'string' || newPost.title.length > 28) {
-    throw new Error("Title is required and must be a string with a max length of 28 characters.");
+  if (!newPost.title) {
+    throw new Error("Title is required");
   }
-  if (!newPost.body || typeof newPost.body !== 'string' || newPost.body.length > 240) {
-    throw new Error("Body is required and must be a string with a max length of 240 characters.");
+  if (!newPost.body) {
+    throw new Error("Body is required");
   }
-  if (!newPost.userId || typeof newPost.userId !== 'number') {
+  if (!newPost.userId) {
     throw new Error("User ID is required and must be a number.");
   }
   
